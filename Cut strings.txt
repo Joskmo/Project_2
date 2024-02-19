@@ -1,0 +1,88 @@
+
+//vector <int> prime_nums{ 2 }; 
+//vector <int> prime_factors_num1{};
+//vector <int> prime_factors_num2{};
+
+//int greatest_common_divisorin(int num1, int num2) {
+//    if (num2 > num1) {
+//        int bubble = num1;
+//        num1 = num2;
+//        num2 = bubble;
+//    }
+//    if (num1 % num2) do {
+//        num1 = num1 % num2;
+//        int bubble = num2;
+//        num2 = num1;
+//        num1 = bubble;
+//    } while (num1 % num2);
+//    return num2;
+//}
+
+//int prime_nums_detector(int num) {
+//    int check = 0;
+//    for (int i = 3; i < num; i++) {
+//        int flag = 0;
+//        for (int k = 0; k < size(prime_nums); k++) {
+//            if (!(i % prime_nums[k])) {
+//                flag++;
+//                break;
+//            }            
+//        }
+//        if (!flag) {
+//            prime_nums.push_back(i);
+//            if (num == i) check = 1;
+//        }
+//    }
+//    return check;
+//}
+
+//int detect_prime_num(int num) {
+//    int check = 0;
+//    int last_num;
+//    if (num == 2) check = 1;
+//    else if (num % 2) {
+//        prime_nums_detector(num);
+//        int last_num = prime_nums[size(prime_nums) - 1];
+//        if (num == last_num) check = 1;
+//    }
+//    prime_nums.clear();
+//    return check;
+//}
+ 
+//void detect_prime_factors(int num1, int num2) {
+//    prime_nums_detector(num1);
+//    for (int i = 0; i < size(prime_nums); i++) {
+//        while (!(num1 % prime_nums[i])) {
+//            num1 = num1 / prime_nums[i];
+//            prime_factors_num1.push_back(prime_nums[i]);
+//        }
+//    }
+//    prime_nums.clear();
+//    prime_nums_detector(num2);
+//    for (int i = 0; i < size(prime_nums); i++) {
+//        while (!(num2 % prime_nums[i])) {
+//            num2 = num2 / prime_nums[i];
+//            prime_factors_num2.push_back(prime_nums[i]);
+//        }
+//    }
+//    for (int i = 0; i < size(prime_factors_num1); i++)
+//        cout << prime_factors_num1[i] << " ";
+//    for (int i = 0; i < size(prime_factors_num2); i++)
+//        cout << prime_factors_num2[i] << " ";
+//}
+
+//void function_choose () {
+//    cout << "Выберете нужную функцию:" << endl << "1 - Функция анализатора" << endl << "2 - Функция калькулятора дробей" << endl << endl << "Ваш выбор: ";
+//    int func_choose = 0;
+//    do {
+//        func_choose = input_int(1, 2);
+//        switch (func_choose) {
+//        case 1:
+//            function_1 ();
+//            break;
+//        case 2:
+//            function_2 ();
+//            break;
+//        }
+//    } while (!func_choose);
+//}
